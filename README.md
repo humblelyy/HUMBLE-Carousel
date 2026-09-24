@@ -1,323 +1,179 @@
-<p align="center">
-  <img src="public/logo.png" alt="Humble Store Logo" width="120">
-</p>
-
-<h1 align="center">Humble Store</h1>
+# HUMBLE STUDIO TOOL
 
 <p align="center">
-  Premium digital marketplace for creators, video editors, and designers.
+<img src="assets/logo/humble-logo.png" alt="HUMBLE STUDIO" width="110">
+</p>
+<p align="center">
+<b>Discord Rich Presence • Editing Timer • Streaks • Community
+Ranking</b>
+</p>
+<p align="center">
+A lightweight Adobe extension built for editors who want to track their
+editing activity and share their workflow through Discord.
 </p>
 
-<hr>
-
-## ✨ About Humble Store
-
-Humble Store is a modern digital marketplace built for creative assets and resources.
-
-The store is designed with a dark cinematic interface, pink/fuchsia accents, responsive layouts, product discovery, wishlist, cart, and checkout experiences.
-
----
-
-## 🚀 Features
-
-- 🛍️ Digital product marketplace
-- 🔍 Product search
-- ❤️ Wishlist system
-- 🛒 Shopping cart
-- ➕ Cart quantity controls
-- 💳 Checkout interface
-- 📦 Product detail pages
-- ⭐ Product ratings and reviews
-- 🏷️ Product categories and badges
-- 📱 Responsive mobile layout
-- 🖥️ Desktop sidebar navigation
-- ☰ Mobile navigation menu
-- 🔔 Toast notifications
-- ✨ Animated page elements
-- 🎨 Dark cinematic UI
-- ⚡ Next.js App Router
-
----
-
-## 🧰 Tech Stack
-
-- **Next.js**
-- **React**
-- **Tailwind CSS**
-- **Framer Motion**
-- **Lucide React**
-- **JavaScript**
-
----
-
-## 📁 Project Structure
-
-```text
-humble-store/
-├── public/
-│
-├── src/
-│   ├── app/
-│   │   ├── cart/
-│   │   ├── checkout/
-│   │   ├── products/
-│   │   ├── success/
-│   │   └── wishlist/
-│   │
-│   ├── components/
-│   │   ├── cart/
-│   │   ├── checkout/
-│   │   ├── common/
-│   │   ├── layout/
-│   │   ├── product/
-│   │   ├── ui/
-│   │   └── wishlist/
-│   │
-│   ├── context/
-│   │   ├── CartContext.jsx
-│   │   ├── ToastContext.jsx
-│   │   └── WishlistContext.jsx
-│   │
-│   ├── data/
-│   │   └── products.js
-│   │
-│   └── styles/
-│
-├── package.json
-├── next.config.mjs
-├── postcss.config.mjs
-└── README.md
-```
-
----
-
-## ⚙️ Installation
-
-### 1. Clone the repository
-
-```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-```
-
-### 2. Open the project
+------------------------------------------------------------------------
 
-```bash
-cd humble-store
-```
+## ✨ Features
 
-### 3. Install dependencies
-
-```bash
-npm install
-```
+- 🎮 **Discord Rich Presence** — Shows when you’re working in Adobe.
+- ⏱️ **Editing Timer** — Tracks your current editing session.
+- 📊 **Total Usage** — Keeps your total Humble Studio Tool usage time.
+- 🔥 **Daily Streak** — Tracks consecutive days of activity.
+- 🏆 **Community Ranking** — Ranking is based on total tool usage.
+- 💬 **Feedback System** — Send bug reports, feature requests, and
+  feedback directly to HUMBLE.
+- 🔄 **Update Checker** — Checks for new Humble Studio Tool releases.
+- 🎬 **Adobe Detection** — Detects supported Adobe applications
+  automatically.
+- 💾 **Persistent Data** — Usage and streak information is stored
+  between sessions.
 
-### 4. Start the development server
+------------------------------------------------------------------------
 
-```bash
-npm run dev
-```
+## 🚀 Installation
 
-Open:
+### Windows
 
-```text
-http://localhost:3000
-```
+1.  Download the latest **Windows ZIP** from the GitHub Releases page.
+2.  Extract the ZIP.
+3.  Copy the `HumbleStudioTool` extension folder into the Adobe CEP
+    extensions directory.
+4.  Enable CEP Developer Mode if required.
+5.  Restart Adobe After Effects or Premiere Pro.
+6.  Open **HUMBLE STUDIO TOOL** from the Extensions menu.
 
----
+> **Note:** Keep the extension folder structure intact after extracting
+> the ZIP.
 
-## 📱 Test Humble Store on Your Phone
+### macOS
 
-To preview the local website on another device connected to the same Wi-Fi:
+1.  Download the latest **macOS ZIP** from the GitHub Releases page.
+2.  Extract the ZIP.
+3.  Install the extension into the Adobe CEP extensions directory.
+4.  Make sure Node.js is available on your Mac.
+5.  Restart Adobe After Effects or Premiere Pro.
+6.  Open **HUMBLE STUDIO TOOL** from the Extensions menu.
 
-```bash
-npm run dev -- --hostname 0.0.0.0
-```
+> **macOS note:** The macOS package requires a compatible Adobe CEP
+> environment and Discord Desktop. macOS end-to-end behavior should be
+> verified on a real Mac.
 
-Then find your computer's IPv4 address:
+------------------------------------------------------------------------
 
-```powershell
-ipconfig
-```
+## 🎮 Discord Rich Presence
 
-Example:
+HUMBLE STUDIO TOOL can connect to Discord while Adobe is active.
 
-```text
-IPv4 Address : 192.168.29.32
-```
+The presence can display:
 
-Open the following on your phone:
+- Adobe application currently being used
+- Editing session activity
+- Current editing streak
+- HUMBLE STUDIO branding
+- A button linking back to HUMBLE STUDIO TOOL
 
-```text
-http://192.168.29.32:3000
-```
+Discord Desktop must be running for Rich Presence to appear.
 
-Your phone and computer must be connected to the same network.
+------------------------------------------------------------------------
 
----
+## 📈 Community Ranking
 
-## 🛒 Shopping Flow
+Community ranking is based on **total Humble Studio Tool usage**.
 
-```text
-Browse Products
-      ↓
-Product Details
-      ↓
-Add to Cart
-      ↓
-Cart
-      ↓
-Checkout
-      ↓
-Success
-```
+Your ranking is independent from your daily streak:
 
----
+- Losing a streak does **not** reset total usage.
+- Total usage continues to accumulate.
+- Community rank is calculated from total usage data.
 
-## ❤️ Wishlist Flow
+------------------------------------------------------------------------
 
-```text
-Product
-   ↓
-❤️ Add to Wishlist
-   ↓
-Wishlist
-   ↓
-Review Saved Products
-```
+## 💬 Feedback
 
----
+Use the built-in feedback section to send:
 
-## 🔔 Notifications
+- 🐛 Bug reports
+- 💡 Feature requests
+- 💬 General feedback
 
-Humble Store uses toast notifications for important user actions such as:
+Feedback is sent to the HUMBLE STUDIO backend and can be reviewed
+through the administrator dashboard.
 
-- Wishlist changes
-- Cart changes
-- Quantity updates
-- Product actions
+Do not submit passwords, private keys, or other sensitive information
+through the feedback form.
 
----
+------------------------------------------------------------------------
 
-## 🎨 Design
+## 🛠️ Supported Environment
 
-The interface uses:
+### Windows
 
-- Dark background
-- Pink / fuchsia accent colors
-- Glass-style surfaces
-- Rounded cards
-- Smooth animations
-- Responsive layouts
-- Cinematic product presentation
+- Windows 10 / Windows 11
+- Adobe After Effects / compatible Adobe CEP hosts
+- Discord Desktop
+- Node bridge included with the Windows package
 
-The design is intended to feel like a premium creative marketplace rather than a generic ecommerce template.
+### macOS
 
----
+- macOS
+- Adobe After Effects / compatible Adobe CEP hosts
+- Discord Desktop
+- Node.js available on the system
 
-## 🔧 Development
+------------------------------------------------------------------------
 
-Start the development server:
+## 📦 Release Files
 
-```bash
-npm run dev
-```
+| File                                        | Description                  |
+|---------------------------------------------|------------------------------|
+| `HumbleStudioTool_*_Windows.zip`            | Windows installation package |
+| `HumbleStudioTool_*_macOS.zip`              | macOS installation package   |
+| `HumbleStudioTool_*_Source_Windows_Mac.zip` | Full source package          |
 
-Build the production version:
+------------------------------------------------------------------------
 
-```bash
-npm run build
-```
+## 🐛 Reporting a Bug
 
-Start the production server:
+Before reporting a bug:
 
-```bash
-npm start
-```
+1.  Restart Adobe.
+2.  Make sure Discord is running.
+3.  Reopen HUMBLE STUDIO TOOL.
+4.  Try the feature again.
+5.  Submit the issue through the built-in **Feedback** section.
 
-Run linting:
+When reporting an issue, include:
 
-```bash
-npm run lint
-```
+- Adobe application
+- Windows/macOS
+- Humble Studio Tool version
+- What you expected
+- What actually happened
+- A screenshot if possible
 
----
+------------------------------------------------------------------------
 
-## 🌐 Git Workflow
+## 🔗 HUMBLE
 
-After making changes:
+<p align="center">
+<a href="https://humblelyy.github.io/HumbleStudioTool/">Website</a> •
+<a href="https://github.com/humblelyy/HumbleStudioTool">GitHub</a> •
+<a href="https://www.youtube.com/@humbleae">YouTube</a> •
+<a href="https://www.instagram.com/_humble.y_/">Instagram</a>
+</p>
+<p align="center">
+<b>Made for editors. Built by HUMBLE.</b>
+</p>
 
-```bash
-git status
-```
-
-Add the changes:
-
-```bash
-git add .
-```
-
-Commit:
-
-```bash
-git commit -m "Update Humble Store"
-```
-
-Push:
-
-```bash
-git push
-```
-
-For a new feature:
-
-```bash
-git add .
-git commit -m "Add wishlist feature"
-git push
-```
-
----
-
-## 📌 Current Development
-
-Humble Store is actively being developed.
-
-Current marketplace systems include:
-
-- Product browsing
-- Product detail pages
-- Wishlist
-- Cart
-- Checkout UI
-- Responsive navigation
-- Toast notifications
-- Mobile support
-
-More marketplace functionality can be added as development continues.
-
----
-
-## 👤 Creator
-
-**HUMBLE**
-
-Creative developer and video editor.
-
-- Instagram: https://www.instagram.com/_humble.y_/
-- YouTube: https://www.youtube.com/@humbleae
-- GitHub: https://github.com/humblelyy
-- Portfolio: https://humblepf.vercel.app/
-
----
+------------------------------------------------------------------------
 
 ## 📄 License
 
-This project is a personal project by HUMBLE.
+See the repository license and release information for the terms
+applicable to this project.
 
-Please respect the project's source code, assets, branding, and original creative work.
+------------------------------------------------------------------------
 
----
-
-<p align="center">
-  Built with ❤️ by <strong>HUMBLE</strong>
-</p>
+**Latest Version:** 5.0.3  
+**Release:** Public
