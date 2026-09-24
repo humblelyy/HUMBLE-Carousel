@@ -1,179 +1,166 @@
-# HUMBLE STUDIO TOOL
-
 <p align="center">
-<img src="assets/logo/humble-logo.png" alt="HUMBLE STUDIO" width="110">
-</p>
-<p align="center">
-<b>Discord Rich Presence • Editing Timer • Streaks • Community
-Ranking</b>
-</p>
-<p align="center">
-A lightweight Adobe extension built for editors who want to track their
-editing activity and share their workflow through Discord.
+  <img src="assets/humble-logo.png" alt="HUMBLE Logo" width="180">
 </p>
 
-------------------------------------------------------------------------
+<h1 align="center">HUMBLE Carousel</h1>
 
-## ✨ Features
+<p align="center">
+  <strong>10 ready-made 3D carousel styles for Adobe After Effects.</strong>
+</p>
 
-- 🎮 **Discord Rich Presence** — Shows when you’re working in Adobe.
-- ⏱️ **Editing Timer** — Tracks your current editing session.
-- 📊 **Total Usage** — Keeps your total Humble Studio Tool usage time.
-- 🔥 **Daily Streak** — Tracks consecutive days of activity.
-- 🏆 **Community Ranking** — Ranking is based on total tool usage.
-- 💬 **Feedback System** — Send bug reports, feature requests, and
-  feedback directly to HUMBLE.
-- 🔄 **Update Checker** — Checks for new Humble Studio Tool releases.
-- 🎬 **Adobe Detection** — Detects supported Adobe applications
-  automatically.
-- 💾 **Persistent Data** — Usage and streak information is stored
-  between sessions.
+<p align="center">
+  Build cinematic carousel animations faster with one focused After Effects panel.
+</p>
 
-------------------------------------------------------------------------
+<hr>
 
-## 🚀 Installation
+## ✨ What is HUMBLE Carousel?
+
+**HUMBLE Carousel** is an After Effects panel designed to make carousel-style animations quick and easy.
+
+Choose a style, add your media, and build the animation without creating the setup from scratch.
+
+### Features
+
+- 🎞️ **10 ready-made carousel styles**
+- ⚡ Fast workflow inside After Effects
+- 🎛️ One focused panel
+- 🖼️ Works with your own media
+- 🌀 Multiple 3D carousel layouts
+- 🖥️ Windows + macOS
+- 🎬 After Effects 2022+
+- 📦 Simple installation
+- 🎨 Designed by HUMBLE Studio
+
+---
+
+## 🎠 Included Styles
+
+| # | Style |
+|---|---|
+| 01 | Cylinder |
+| 02 | Cube |
+| 03 | Fan |
+| 04 | Ring |
+| 05 | Polaroid |
+| 06 | Helix |
+| 07 | Slide |
+| 08 | Radial |
+| 09 | Wave Wall |
+| 10 | Snap Stack |
+
+---
+
+## 📦 Download
+
+### HUMBLE Carousel 1.0.3
+
+[**⬇️ Download HUMBLE Carousel 1.0.3**](assets/HUMBLE_Carousel_1.0.3.zip)
+
+**Compatibility:** Adobe After Effects 2022+
+
+**Platforms:** Windows · macOS
+
+---
+
+## 🛠️ Installation
 
 ### Windows
 
-1.  Download the latest **Windows ZIP** from the GitHub Releases page.
-2.  Extract the ZIP.
-3.  Copy the `HumbleStudioTool` extension folder into the Adobe CEP
-    extensions directory.
-4.  Enable CEP Developer Mode if required.
-5.  Restart Adobe After Effects or Premiere Pro.
-6.  Open **HUMBLE STUDIO TOOL** from the Extensions menu.
+Copy the `HUMBLE_Carousel_1.0.3` folder to:
 
-> **Note:** Keep the extension folder structure intact after extracting
-> the ZIP.
+```text
+C:\Program Files (x86)\Common Files\Adobe\CEP\extensions
+```
 
-### macOS
+Then open After Effects:
 
-1.  Download the latest **macOS ZIP** from the GitHub Releases page.
-2.  Extract the ZIP.
-3.  Install the extension into the Adobe CEP extensions directory.
-4.  Make sure Node.js is available on your Mac.
-5.  Restart Adobe After Effects or Premiere Pro.
-6.  Open **HUMBLE STUDIO TOOL** from the Extensions menu.
-
-> **macOS note:** The macOS package requires a compatible Adobe CEP
-> environment and Discord Desktop. macOS end-to-end behavior should be
-> verified on a real Mac.
-
-------------------------------------------------------------------------
-
-## 🎮 Discord Rich Presence
-
-HUMBLE STUDIO TOOL can connect to Discord while Adobe is active.
-
-The presence can display:
-
-- Adobe application currently being used
-- Editing session activity
-- Current editing streak
-- HUMBLE STUDIO branding
-- A button linking back to HUMBLE STUDIO TOOL
-
-Discord Desktop must be running for Rich Presence to appear.
-
-------------------------------------------------------------------------
-
-## 📈 Community Ranking
-
-Community ranking is based on **total Humble Studio Tool usage**.
-
-Your ranking is independent from your daily streak:
-
-- Losing a streak does **not** reset total usage.
-- Total usage continues to accumulate.
-- Community rank is calculated from total usage data.
-
-------------------------------------------------------------------------
-
-## 💬 Feedback
-
-Use the built-in feedback section to send:
-
-- 🐛 Bug reports
-- 💡 Feature requests
-- 💬 General feedback
-
-Feedback is sent to the HUMBLE STUDIO backend and can be reviewed
-through the administrator dashboard.
-
-Do not submit passwords, private keys, or other sensitive information
-through the feedback form.
-
-------------------------------------------------------------------------
-
-## 🛠️ Supported Environment
-
-### Windows
-
-- Windows 10 / Windows 11
-- Adobe After Effects / compatible Adobe CEP hosts
-- Discord Desktop
-- Node bridge included with the Windows package
+```text
+Window → Extensions → HUMBLE Carousel
+```
 
 ### macOS
 
-- macOS
-- Adobe After Effects / compatible Adobe CEP hosts
-- Discord Desktop
-- Node.js available on the system
+Copy the `HUMBLE_Carousel_1.0.3` folder to:
 
-------------------------------------------------------------------------
+```text
+~/Library/Application Support/Adobe/CEP/extensions/
+```
 
-## 📦 Release Files
+Then open After Effects:
 
-| File                                        | Description                  |
-|---------------------------------------------|------------------------------|
-| `HumbleStudioTool_*_Windows.zip`            | Windows installation package |
-| `HumbleStudioTool_*_macOS.zip`              | macOS installation package   |
-| `HumbleStudioTool_*_Source_Windows_Mac.zip` | Full source package          |
+```text
+Window → Extensions → HUMBLE Carousel
+```
 
-------------------------------------------------------------------------
+> **Note:** CEP extensions may require CEP developer mode depending on your After Effects setup.
 
-## 🐛 Reporting a Bug
+---
 
-Before reporting a bug:
-
-1.  Restart Adobe.
-2.  Make sure Discord is running.
-3.  Reopen HUMBLE STUDIO TOOL.
-4.  Try the feature again.
-5.  Submit the issue through the built-in **Feedback** section.
-
-When reporting an issue, include:
-
-- Adobe application
-- Windows/macOS
-- Humble Studio Tool version
-- What you expected
-- What actually happened
-- A screenshot if possible
-
-------------------------------------------------------------------------
-
-## 🔗 HUMBLE
+## 🎥 Preview
 
 <p align="center">
-<a href="https://humblelyy.github.io/HumbleStudioTool/">Website</a> •
-<a href="https://github.com/humblelyy/HumbleStudioTool">GitHub</a> •
-<a href="https://www.youtube.com/@humbleae">YouTube</a> •
-<a href="https://www.instagram.com/_humble.y_/">Instagram</a>
+  <img src="assets/carousel-poster.jpg" alt="HUMBLE Carousel Preview" width="700">
 </p>
+
+---
+
+## 🧩 Compatibility
+
+| Software | Support |
+|---|---|
+| After Effects 2022 | ✅ |
+| After Effects 2023 | ✅ |
+| After Effects 2024 | ✅ |
+| After Effects 2025 | ✅ |
+| After Effects 2026 | ✅ |
+| Windows | ✅ |
+| macOS | ✅ |
+
+---
+
+## 📁 Project Structure
+
+```text
+HUMBLE-Carousel/
+├── assets/
+│   ├── styles/
+│   ├── carousel-poster.jpg
+│   ├── carousel-styles.mp4
+│   ├── humble-logo.png
+│   └── HUMBLE_Carousel_1.0.3.zip
+├── public/
+├── src/
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## 🌐 Links
+
+- 🌐 **HUMBLE Studio:** https://humblelyy.github.io/HumbleStudio/
+- 💻 **GitHub:** https://github.com/humblelyy
+- 📸 **Instagram:** https://www.instagram.com/_humble.y_/
+- ▶️ **YouTube:** https://www.youtube.com/@humbleae
+- 💼 **LinkedIn:** https://www.linkedin.com/in/mahesh-madhav-602683357
+
+---
+
+## 💖 Credits
+
+Created by **HUMBLE Studio**.
+
+Built for creators who want to spend less time setting up carousel rigs and more time editing.
+
 <p align="center">
-<b>Made for editors. Built by HUMBLE.</b>
+  <strong>HUMBLE</strong> · Video Editing Tools & Creative Experiments
 </p>
 
-------------------------------------------------------------------------
+---
 
-## 📄 License
-
-See the repository license and release information for the terms
-applicable to this project.
-
-------------------------------------------------------------------------
-
-**Latest Version:** 5.0.3  
-**Release:** Public
+<p align="center">
+  <sub>© 2026 HUMBLE Studio</sub>
+</p>
