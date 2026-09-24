@@ -55,7 +55,7 @@ Choose a style, add your media, and build the animation without creating the set
 
 ### HUMBLE Carousel 1.0.3
 
-[**⬇️ Download HUMBLE Carousel 1.0.3**](assets/HUMBLE_Carousel_1.0.3.zip)
+[**⬇️ Download HUMBLE Carousel **](https://humblelyy.github.io/HUMBLE-Carousel/)
 
 **Compatibility:** Adobe After Effects 2022+
 
