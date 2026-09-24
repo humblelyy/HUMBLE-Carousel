@@ -7,7 +7,7 @@ const rootDir = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: '/HUMBLE-Carousel/',
   build: {
     sourcemap: false,
     rollupOptions: {
