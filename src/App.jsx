@@ -101,7 +101,7 @@ function App() {
           </div>
         </section>
 
-        <ScrollBasedVelocity image="/assets/humble-fl.png" />
+        <ScrollBasedVelocity image="./assets/humble-fl.png" />
 
         <section id="info" className="features-section page-pad">
           <div className="feature-intro reveal">
