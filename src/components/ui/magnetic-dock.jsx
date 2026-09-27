@@ -82,11 +82,10 @@ export function MagneticDownload({ href, children = 'DOWNLOAD 1.0.3', onClick })
   }
 
   return (
-    <a
+    <button
       ref={ref}
+      type="button"
       className="magnetic-download"
-      href={href}
-      download
       onPointerMove={move}
       onPointerLeave={reset}
       onClick={onClick}
@@ -94,6 +93,6 @@ export function MagneticDownload({ href, children = 'DOWNLOAD 1.0.3', onClick })
       <span className="magnetic-download-icon"><DockIconDownload /></span>
       <span>{children}</span>
       <span className="magnetic-download-arrow">↗</span>
-    </a>
+    </button>
   )
 }
