@@ -4,10 +4,95 @@ import { MagneticDock, MagneticDownload, DockIconHome, DockIconInstall, DockIcon
 import { FlightStatusCardAdaptive } from './components/ui/flight-status-card'
 import { ScrollBasedVelocity } from './components/ui/scroll-based-velocity'
 
+function AdDownloadModal({ onClose }) {
+  const [seconds, setSeconds] = React.useState(4)
+  const [ready, setReady] = React.useState(false)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setSeconds((current) => {
+        if (current <= 1) {
+          clearInterval(timer)
+          setReady(true)
+          return 0
+        }
+        return current - 1
+      })
+    }, 1000)
+    return () => clearInterval(timer)
+  }, [])
+
+  const startDownload = () => {
+    const link = document.createElement('a')
+    link.href = './assets/HUMBLE_Carousel_1.0.3.zip'
+    link.download = 'HUMBLE_Carousel_1.0.3.zip'
+    document.body.appendChild(link)
+    link.click()
+    link.remove()
+    onClose()
+  }
+
+  return (
+    <div className="humble-ad-overlay" role="dialog" aria-modal="true" aria-labelledby="download-dialog-title">
+      <div className="humble-ad-backdrop" onClick={onClose} />
+      <div className="humble-ad-modal">
+        <button className="humble-ad-close" onClick={onClose} aria-label="Close download dialog">×</button>
+        <div className="humble-ad-topline"><span>HUMBLE CAROUSEL</span><span>DOWNLOAD</span></div>
+        <div className="humble-ad-content">
+          <div className="humble-ad-label">ADVERTISEMENT</div>
+          <div className="humble-ad-box">
+            <div className="humble-ad-symbol">H</div>
+            <strong id="download-dialog-title">Support HUMBLE</strong>
+            <p>Ads help us keep HUMBLE tools available and maintained.</p>
+            <small>Advertisement space</small>
+          </div>
+          <div className="humble-ad-status">
+            {!ready ? <><span className="humble-ad-spinner" />Preparing your download… {seconds}</> : <><span className="humble-ad-ready-dot" />Your download is ready</>}
+          </div>
+          <button className="humble-ad-continue" disabled={!ready} onClick={startDownload}>
+            {ready ? 'CONTINUE TO DOWNLOAD' : `WAIT ${seconds}s`}<span>↗</span>
+          </button>
+          <p className="humble-ad-note">HUMBLE Carousel · After Effects 2022+</p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function CookieBanner() {
+  const [visible, setVisible] = React.useState(false)
+
+  useEffect(() => {
+    try {
+      setVisible(localStorage.getItem('humble-cookie-consent') !== 'accepted')
+    } catch {}
+  }, [])
+
+  const accept = () => {
+    try { localStorage.setItem('humble-cookie-consent', 'accepted') } catch {}
+    setVisible(false)
+  }
+
+  if (!visible) return null
+
+  return (
+    <div className="cookie-banner" role="region" aria-label="Cookie notice">
+      <div>
+        <strong>COOKIES</strong>
+        <p>We use essential cookies and, if enabled later, advertising cookies to keep the site working and support HUMBLE. See our <a href="./cookie.html">Cookie Policy</a>.</p>
+      </div>
+      <div className="cookie-actions">
+        <a href="./cookie.html">Learn more</a>
+        <button onClick={accept}>Accept</button>
+      </div>
+    </div>
+  )
+}
 
 function App() {
   const pageRef = useRef(null)
   const audioRef = useRef(null)
+  const [showAdDownload, setShowAdDownload] = React.useState(false)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -148,7 +233,13 @@ function App() {
                 </div>
               </div>
             </div>
-            <MagneticDownload href="./assets/HUMBLE_Carousel_1.0.3.zip" />
+            <MagneticDownload
+              href="#"
+              onClick={(event) => {
+                event.preventDefault()
+                setShowAdDownload(true)
+              }}
+            />
           </div>
         </section>
       </main>
@@ -166,13 +257,17 @@ function App() {
         <div className="footer-bottom">
           <span className="footer-humble"><img src="./assets/sl-humble-final.png" alt="HUMBLE" /><b>© {new Date().getFullYear()}</b></span>
           <div className="footer-links">
-            <a href="./privacy.html">Privacy </a>
+            <a href="./privacy.html">Privacy</a>
+            <a href="./cookie.html">Cookies</a>
             <a href="./policy.html">Policy</a> 
             <a href="https://humblelyy.github.io/HumbleStudio/" target="_blank" rel="noreferrer">HUMBLE STUDIO ↗</a>
           </div>
         </div>
         <FlightStatusCardAdaptive />
       </footer>
+
+      {showAdDownload && <AdDownloadModal onClose={() => setShowAdDownload(false)} />}
+      <CookieBanner />
     </div>
   )
 }
