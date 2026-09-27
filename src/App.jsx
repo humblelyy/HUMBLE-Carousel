@@ -60,16 +60,16 @@ function AdDownloadModal({ onClose }) {
 }
 
 function CookieBanner() {
-  const [visible, setVisible] = React.useState(false)
+  const [visible, setVisible] = React.useState(true)
 
   useEffect(() => {
     try {
-      setVisible(localStorage.getItem('humble-cookie-consent') !== 'accepted')
+      setVisible(localStorage.getItem('humble-cookie-consent-v2') !== 'accepted')
     } catch {}
   }, [])
 
   const accept = () => {
-    try { localStorage.setItem('humble-cookie-consent', 'accepted') } catch {}
+    try { localStorage.setItem('humble-cookie-consent-v2', 'accepted') } catch {}
     setVisible(false)
   }
 
