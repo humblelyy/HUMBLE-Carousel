@@ -5,11 +5,19 @@ import { fileURLToPath } from 'node:url'
 
 const rootDir = dirname(fileURLToPath(import.meta.url))
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [react()],
-  base: '/HUMBLE-Carousel/',
+
+  // Vercel → /
+  // GitHub Pages → /HUMBLE-Carousel/
+  base:
+    process.env.VERCEL === '1'
+      ? '/'
+      : '/HUMBLE-Carousel/',
+
   build: {
     sourcemap: false,
+
     rollupOptions: {
       input: {
         main: resolve(rootDir, 'index.html'),
@@ -19,4 +27,4 @@ export default defineConfig({
       },
     },
   },
-})
+}))
