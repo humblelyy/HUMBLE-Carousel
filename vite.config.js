@@ -15,6 +15,7 @@ export default defineConfig({
         main: resolve(rootDir, 'index.html'),
         privacy: resolve(rootDir, 'privacy.html'),
         policy: resolve(rootDir, 'policy.html'),
+        cookie: resolve(rootDir, 'cookie.html'),
       },
     },
   },
