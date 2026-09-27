@@ -59,7 +59,7 @@ export const DockIconDownload = () => <svg viewBox="0 0 24 24" aria-hidden="true
 export const DockIconInfo = () => <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 10v6m0-9v.01" /></svg>
 
 
-export function MagneticDownload({ href, children = 'DOWNLOAD 1.0.3' }) {
+export function MagneticDownload({ href, children = 'DOWNLOAD 1.0.3', onClick }) {
   const ref = useRef(null)
 
   const move = (event) => {
@@ -89,6 +89,7 @@ export function MagneticDownload({ href, children = 'DOWNLOAD 1.0.3' }) {
       download
       onPointerMove={move}
       onPointerLeave={reset}
+      onClick={onClick}
     >
       <span className="magnetic-download-icon"><DockIconDownload /></span>
       <span>{children}</span>
