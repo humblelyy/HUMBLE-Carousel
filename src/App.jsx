@@ -141,7 +141,7 @@ function App() {
 
         <section id="install" className="install-section page-pad reveal">
           <div className="section-head install-heading">
-            <div><span>03</span><h2>INSTALL</h2></div>
+            <div><span>03</span><h2>INSTALLATION </h2></div>
             <div className="ae-compatibility"><img src="./assets/ae-main-logo-symbol-icon.png" alt="Adobe After Effects" /><div><span>COMPATIBILITY</span><strong>AFTER EFFECTS 2022+</strong></div></div>
           </div>
           <div className="install-grid">
@@ -156,7 +156,7 @@ function App() {
             <div className="download-copy">
               <span>04</span>
               <div>
-                <h2>DOWNLOAD 1.0.3</h2>
+                <h2>DOWNLOAD </h2>
                 <p>HUMBLE Carousel for After Effects 2022+.</p>
                 <div className="download-platforms" aria-label="Supported platforms">
                   <span className="platform-badge"><i className="platform-dot" /> WINDOWS</span>
